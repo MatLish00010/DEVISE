@@ -3,9 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" type="text/css" href="../css/normalize.css">
 </head>
 <body>
-    <h1>Наконец-то</h1>
+    <div class="container">
+        <div class="header">
+            <div class="header__logo">
+                <a href="/"><img src="../img/logo.png" alt="DEVICE"></a>
+            </div>
+            <nav class="main-nav">
+                <ul class="main-nav__user-list">
+                    <li class="main-nav__user-item main-nav__user-item--search">
+                        <form action="" class="main-nav__search" method="get">
+                            <input type="search" class="main-nav__search-input" id="search" name="search"
+                                   placeholder="Поиск по сайту">
+                            <button class="main-nav__search-btn" type="submit">Найти</button>
+                            <label for="search" class="main-nav__search-label">
+                            <span class="visually-hidden"></span>
+                            </label>
+                        </form>
+                    </li>
+                    <li class="main-nav__user-item main-nav__user-item--login">
+                        <a href="#" class="main-nav__user-link main-nav__user-link--login">Войти</a>
+                    </li>
+                    <li class="main-nav__user-item main-nav__user-item--compare">
+                        <a href="#" class="main-nav__user-link main-nav__user-link--compare">Сравнить</a>
+                    </li>
+                    <li class="main-nav__user-item main-nav__user-item--cart">
+                        <a href="#" class="main-nav__user-link main-nav__user-link--cart">Корзина</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
 
 </body>
 </html>

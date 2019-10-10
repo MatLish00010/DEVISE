@@ -1,0 +1,291 @@
+body{
+    font-family: "Open Sans", "Arial", sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 24px;
+}
+
+
+html{
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+/*basic element settings*/
+
+
+*::before,
+*::after{
+    box-sizing: inherit;
+}
+
+body{
+    min-width: 1200px;
+    margin: 0;
+    padding: 0;
+    padding-top: 40px;
+    overflow-x: hidden;
+
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 30px;
+    font-family: "Open Sans", "Arial", sans-serif;
+    color: #464646;
+    letter-spacing: 0.01em;
+
+    background-color: #fff;
+}
+
+a{
+    text-decoration: none;
+}
+
+.container{
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 auto;
+}
+
+.btn{
+    position: relative;
+    z-index: 1;
+
+    display: block;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 24px;
+    font-family: "Gilroy", "Arial", sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:active {
+    color: rgba(0, 0, 0, 0.3);
+}
+
+.btn::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -2px;
+    z-index: -1;
+
+    width: inherit;
+    height: 8px;
+    margin-top: -5px;
+
+    background-color: #f0c52e;
+}
+
+.btn:hover::before,
+.btn:focus::before {
+    top: 0;
+
+    height: 40px;
+    margin: 0;
+
+    transition: all 0.3s linear;
+}
+
+.btn:active::before {
+    top: 0;
+
+    height: 40px;
+    margin: 0;
+
+    color: rgba(0, 0, 0, 0.3);
+
+    transition: all 0.3s linear;
+}
+
+
+.header{
+    position: relative;
+    color: #000;
+    background-color: #f7e296;
+}
+
+
+/*Work with Logo*/
+
+
+.header__logo{
+    position: absolute;
+    top:-20px;
+    left: 59px;
+}
+
+.header__logo a{
+    cursor: pointer;
+
+}
+
+.header__logo a:hover,
+.header__logo a:focus {
+    opacity: 0.6;
+
+    transition: 0.3s;
+}
+
+.header__logo a:active{
+    opacity: 0.3s;
+}
+
+.header__logo img{
+    width: 165px;
+    height: 35px;
+}
+
+/*Work with menu-NAV*/
+
+.main-nav{
+    padding: 28px 60px 160px 60px;
+}
+
+.main-nav__user-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 21px;
+
+    list-style: none;
+}
+
+.main-nav__user-item--search{
+    width: 540px;
+}
+
+.main-nav__user-item--login{
+    width: 280px;
+    padding-left: 25px;
+}
+
+.main-nav__user-item--cart {
+    width: 110px;
+    text-align: right;
+}
+
+.main-nav__search{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width:440px;
+}
+
+.main-nav__search-label{
+    position: absolute;
+    top: 8px;
+    left: -25px;
+    width: 20px;
+    height: 20px;
+    background-image: url("../img/search.png");
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.main-nav__search-label:before{
+    content: "";
+    position: absolute;
+    bottom: -12px;
+    left: 0;
+    
+    display: none;
+    width: 400px;
+    height: 0;
+
+    background-color: #000;
+}
+
+.main-nav__search-input{
+    position: relative;
+    width: 320px;
+    height: 30px;
+    margin-left: 10px;
+    padding: 0;
+
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 30px;
+    font-family: "Open Sans", "Arial", sans-serif;
+    color: #000;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+
+.main-nav__search-input:active{
+    border-bottom: 2px solid black;
+}
+
+.main-nav__search-input:focus{
+    border-bottom: 2px solid black;
+}
+
+
+.main-nav__search-input:focus ~ .main-nav__search-label::before {
+    display: block;
+}
+
+.main-nav__search-input:focus ~ .main-nav__search-btn {
+    z-index: 0;
+
+    opacity: 1;
+}
+
+.main-nav__search-btn{
+    position: absolute;
+    top: -9px;
+    left: 330px;
+    z-index: -1;
+
+    width: 85px;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding-top: 10px;
+    padding-bottom: 8px;
+
+    background: none;
+    background-color: transparent;
+    color: black;
+    border: 2px solid #000;
+    cursor: pointer;
+    opacity: 0;
+}
+
+.main-nav__seacrh-btn:hover{
+    color: #ffffff;
+    background-color: #000000;
+    transition: 0.5s;
+}
+
+.main-nav__search-btn:focus{
+    z-index: 0;
+    color: black;
+    background-color: #000;
+    opacity: 1;
+    transition: all 0.1s linear;
+}
+
+.main-nav__seacrh-btn:active{
+    color: rgba(255,255,255,0.3);
+}
+
+.main-nav__search-btn:focus ~ .main-nav__search-label::before {
+    display: block;
+}
+
+
+
+
