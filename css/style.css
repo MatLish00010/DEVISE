@@ -286,6 +286,47 @@ a{
     display: block;
 }
 
+.main-nav__user-link{
+    position: relative;
+    color: #000;
+}
+
+.main-nav__user-link:hover{
+    opacity: 0.6;
+    transition: 0.3s;
+
+}
+
+.main-nav__user-link:hover::before{
+    opacity: 0.6;
+    transition: 0.3s;
+}
+
+.main-nav__user-link:active{
+    opacity: 0.3;
+    transition: 0.3s;
+}
+
+.main-nav__user-link:active::before{
+    opacity: 0.3;
+    transition: 0.3s;
+}
+
+.main-nav__user-link::before{
+    content: "";
+    position: absolute;
+    width:13px;
+    height: 12px;
+
+    background-repeat: no-repeat;
+}
+
+.main-nav__user-link--login::before{
+    bottom: 4px;
+    left: -26px;
+
+    background-image: url("../img/user.png");
+}
 
 
 
