@@ -184,8 +184,7 @@ a{
 
 .main-nav__search-label{
     position: absolute;
-    top: 8px;
-    left: -25px;
+    transform: translate(-100%,40%);
     width: 20px;
     height: 20px;
     background-image: url("../img/search.png");
@@ -289,6 +288,7 @@ a{
 .main-nav__user-link{
     position: relative;
     color: #000;
+    padding: 10px;
 }
 
 .main-nav__user-link:hover{
@@ -322,22 +322,19 @@ a{
 }
 
 .main-nav__user-link--login::before{
-    bottom: 4px;
-    left: -26px;
+    transform: translate(-140%,80%);
 
     background-image: url("../img/user.png");
 }
 
 .main-nav__user-link--compare::before{
-    bottom: 2px;
-    left: -20px;
+    transform: translate(-140%,80%);
 
     background-image: url("../img/compare.png");
 }
 
-.main-nav__user-link--cart::before{
-    bottom: 4px;
-    left: -23px;
+.main-nav__user-link--cart::before  {
+    transform: translate(-140%,80%);
 
     background-image: url("../img/cart.png");
 }
