@@ -328,5 +328,19 @@ a{
     background-image: url("../img/user.png");
 }
 
+.main-nav__user-link--compare::before{
+    bottom: 2px;
+    left: -20px;
+
+    background-image: url("../img/compare.png");
+}
+
+.main-nav__user-link--cart::before{
+    bottom: 4px;
+    left: -23px;
+
+    background-image: url("../img/cart.png");
+}
+
 
 
