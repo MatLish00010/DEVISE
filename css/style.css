@@ -389,3 +389,72 @@ a{
     display: block;
 }
 
+.main-nav__link--catalog::before{
+    content: "";
+    position: absolute;
+    right: -27px;
+    bottom: 10px;
+    width: 16px;
+    height: 2px;
+    background-color: #b8a974;
+}
+
+.main-nav__link--catalog::after{
+    content: "";
+    position: absolute;
+    right: -20px;
+    bottom: 3px;
+    width: 2px;
+    height: 16px;
+    background-color: #b8a974;
+}
+
+.main-nav__link--contacts{
+    margin-right: -0.2em;
+}
+
+.main-nav__sub-wrap{
+    position: absolute;
+    top: 22px;
+    left: -60px;
+    z-index: 2;
+
+    display: none;
+    width: 1160px;
+    padding-top: 26px;
+    padding-bottom: 34px;
+    padding-left: 60px;
+
+    background-color: #f7e296;
+}
+
+.main-nav__sub-wrap:hover{
+    display: block;
+}
+
+.main-nav__sub-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 640px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 36px;
+    font-family: "Open Sans", "Arial", sans-serif;
+    letter-spacing: 0.01em;
+}
+
+.main-nav__sub-column{
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    padding-right: 20px;
+}
+
+.main-nav__sub-column:first-child{
+    width: 240px;
+}
+
