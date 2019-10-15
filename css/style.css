@@ -354,19 +354,6 @@ a{
     list-style: none;
 }
 
-.main-nav__item--delivery {
-    width: 158px;
-}
-
-.main-nav__item--warranty{
-    width: 162px;
-}
-
-.main-nav__item--contacts{
-    width: 180px;
-    text-align: right;
-}
-
 .main-nav__link{
     font-weight: 800;
     font-size: 18px;
@@ -376,6 +363,10 @@ a{
     text-transform: uppercase;
     letter-spacing: 0.2em;
     cursor: pointer;
+}
+
+.main-nav__item--catalog{
+    padding-right: 350px;
 }
 
 .main-nav__link:hover{
