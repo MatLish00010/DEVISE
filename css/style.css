@@ -144,13 +144,13 @@ a{
     height: 35px;
 }
 
-/*Work with simple-NAV*/
+/*Work with NAV*/
 
-.simple-nav{
+.nav{
     padding: 28px 60px 150px 60px;
 }
 
-.simple-nav__actions{
+.nav__actions{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -161,28 +161,28 @@ a{
     list-style: none;
 }
 
-.simple-nav__user-item--search{
+.nav__user-item--search{
     width: 540px;
 }
 
-.simple-nav__user-item--login{
+.nav__user-item--login{
     width: 280px;
     padding-left: 25px;
 }
 
-.simple-nav__user-item--cart {
+.nav__user-item--cart {
     width: 110px;
     text-align: right;
 }
 
-.simple-nav__search{
+.nav__search{
     position: relative;
     display: flex;
     justify-content: space-between;
     width:440px;
 }
 
-.simple-nav__search-label{
+.nav__search-label{
     position: absolute;
     transform: translate(-100%,40%);
     width: 20px;
@@ -192,7 +192,7 @@ a{
     cursor: pointer;
 }
 
-.simple-nav__search-label:before{
+.nav__search-label:before{
     content: "";
     position: absolute;
     bottom: -12px;
@@ -205,7 +205,7 @@ a{
     background-color: #000;
 }
 
-.simple-nav__search-input{
+.nav__search-input{
     position: relative;
     width: 320px;
     height: 30px;
@@ -225,30 +225,30 @@ a{
 }
 
 
-.simple-nav__search-input:active{
+.nav__search-input:active{
     border-bottom: 2px solid black;
     transition: 0.3s;
 }
 
-.simple-nav__search-input:focus{
+.nav__search-input:focus{
     border-bottom: 2px solid black;
     transition: 0.3s;
 }
 
 
-.simple-nav__search-input:focus ~ .simple-nav__search-label::before {
+.nav__search-input:focus ~ .nav__search-label::before {
     display: block;
     transition: 0.3s;
 }
 
-.simple-nav__search-input:focus ~ .simple-nav__search-btn {
+.nav__search-input:focus ~ .nav__search-btn {
     z-index: 0;
 
     opacity: 1;
     transition: 0.3s;
 }
 
-.simple-nav__search-btn{
+.nav__search-btn{
     position: absolute;
     top: -9px;
     left: 330px;
@@ -268,13 +268,13 @@ a{
     opacity: 0;
 }
 
-.simple-nav__seacrh-btn:hover{
+.nav__seacrh-btn:hover{
     color: #ffffff;
     background-color: #000000;
     transition: 0.5s;
 }
 
-.simple-nav__search-btn:focus{
+.nav__search-btn:focus{
     z-index: 0;
     color: black;
     background-color: #000;
@@ -282,42 +282,42 @@ a{
     transition: all 0.1s linear;
 }
 
-.simple-nav__seacrh-btn:active{
+.nav__seacrh-btn:active{
     color: rgba(255,255,255,0.3);
 }
 
-.simple-nav__search-btn:focus ~ .simple-nav__search-label::before {
+.nav__search-btn:focus ~ .nav__search-label::before {
     display: block;
 }
 
-.simple-nav__user-link{
+.nav__user-link{
     position: relative;
     color: #000;
     padding: 10px;
 }
 
-.simple-nav__user-link:hover{
+.nav__user-link:hover{
     opacity: 0.6;
     transition: 0.3s;
 
 }
 
-.simple-nav__user-link:hover::before{
+.nav__user-link:hover::before{
     opacity: 0.6;
     transition: 0.3s;
 }
 
-.simple-nav__user-link:active{
+.nav__user-link:active{
     opacity: 0.3;
     transition: 0.3s;
 }
 
-.simple-nav__user-link:active::before{
+.nav__user-link:active::before{
     opacity: 0.3;
     transition: 0.3s;
 }
 
-.simple-nav__user-link::before{
+.nav__user-link::before{
     content: "";
     position: absolute;
     width:13px;
@@ -326,25 +326,25 @@ a{
     background-repeat: no-repeat;
 }
 
-.simple-nav__user-link--login::before{
+.nav__user-link--login::before{
     transform: translate(-140%,80%);
 
     background-image: url("../img/user.png");
 }
 
-.simple-nav__user-link--compare::before{
+.nav__user-link--compare::before{
     transform: translate(-140%,80%);
 
     background-image: url("../img/compare.png");
 }
 
-.simple-nav__user-link--cart::before  {
+.nav__user-link--cart::before  {
     transform: translate(-140%,80%);
 
     background-image: url("../img/cart.png");
 }
 
-.simple-nav__list{
+.nav__list{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -354,7 +354,7 @@ a{
     list-style: none;
 }
 
-.simple-nav__link{
+.nav__link{
     font-weight: 800;
     font-size: 18px;
     line-height: 24px;
@@ -365,28 +365,28 @@ a{
     cursor: pointer;
 }
 
-.simple-nav__item--catalog{
+.nav__item--catalog{
     padding-right: 350px;
 }
 
-.simple-nav__link:hover{
+.nav__link:hover{
     opacity: 0.5;
     transition: 0.3s;
 }
 
-.simple-nav__link:active{
+.nav__link:active{
     opacity: 0.2;
 }
 
-.simple-nav__link--catalog{
+.nav__link--catalog{
     position: relative;
 }
 
-.simple-nav__link--catalog:hover + .simple-nav__sub-wrap{
+.nav__link--catalog:hover + .nav__sub-wrap{
     display: block;
 }
 
-.simple-nav__link--catalog::before{
+.nav__link--catalog::before{
     content: "";
     position: absolute;
     right: -27px;
@@ -396,7 +396,7 @@ a{
     background-color: #b8a974;
 }
 
-.simple-nav__link--catalog::after{
+.nav__link--catalog::after{
     content: "";
     position: absolute;
     right: -20px;
@@ -406,7 +406,7 @@ a{
     background-color: #b8a974;
 }
 
-.simple-nav__link--contacts{
+.nav__link--contacts{
     margin-right: -0.2em;
 }
 
@@ -474,11 +474,11 @@ a{
 
 /* sub-wrae--opened*/
 
-.simple-nav__sub-wrap--opened{
+.nav__sub-wrap--opened{
     display: block;
 }
 
-.simple-nav__sub-wrap--opened{
+.nav__sub-wrap--opened{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -491,28 +491,28 @@ a{
     font-family: "Open Sans", "Arial", sans-serif;
 }
 
-.simple-nav__sub-column--opened{
+.nav__sub-column--opened{
     display: flex;
     flex-direction: column;
     width: 200px;
     padding-right: 20px;
 }
 
-.simple-nav__sub-column--opened:first-child{
+.nav__sub-column--opened:first-child{
     width: 240px;
 }
 
-.simple-nav__sub-column--opened a{
+.nav__sub-column--opened a{
     display: block;
     color: #000;
 
     font-weight:800;
 }
 
-.simple-nav__sub-column--opened a:hover{
+.nav__sub-column--opened a:hover{
     opacity: 0.5;
 }
 
-.simple-nav__sub-column--opened a:active{
+.nav__sub-column--opened a:active{
     opacity: 0.3;
 }
