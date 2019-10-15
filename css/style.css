@@ -144,13 +144,13 @@ a{
     height: 35px;
 }
 
-/*Work with menu-NAV*/
+/*Work with simple-NAV*/
 
-.main-nav{
+.simple-nav{
     padding: 28px 60px 160px 60px;
 }
 
-.main-nav__actions{
+.simple-nav__actions{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -161,28 +161,28 @@ a{
     list-style: none;
 }
 
-.main-nav__user-item--search{
+.simple-nav__user-item--search{
     width: 540px;
 }
 
-.main-nav__user-item--login{
+.simple-nav__user-item--login{
     width: 280px;
     padding-left: 25px;
 }
 
-.main-nav__user-item--cart {
+.simple-nav__user-item--cart {
     width: 110px;
     text-align: right;
 }
 
-.main-nav__search{
+.simple-nav__search{
     position: relative;
     display: flex;
     justify-content: space-between;
     width:440px;
 }
 
-.main-nav__search-label{
+.simple-nav__search-label{
     position: absolute;
     transform: translate(-100%,40%);
     width: 20px;
@@ -192,7 +192,7 @@ a{
     cursor: pointer;
 }
 
-.main-nav__search-label:before{
+.simple-nav__search-label:before{
     content: "";
     position: absolute;
     bottom: -12px;
@@ -205,7 +205,7 @@ a{
     background-color: #000;
 }
 
-.main-nav__search-input{
+.simple-nav__search-input{
     position: relative;
     width: 320px;
     height: 30px;
@@ -225,30 +225,30 @@ a{
 }
 
 
-.main-nav__search-input:active{
+.simple-nav__search-input:active{
     border-bottom: 2px solid black;
     transition: 0.3s;
 }
 
-.main-nav__search-input:focus{
+.simple-nav__search-input:focus{
     border-bottom: 2px solid black;
     transition: 0.3s;
 }
 
 
-.main-nav__search-input:focus ~ .main-nav__search-label::before {
+.simple-nav__search-input:focus ~ .simple-nav__search-label::before {
     display: block;
     transition: 0.3s;
 }
 
-.main-nav__search-input:focus ~ .main-nav__search-btn {
+.simple-nav__search-input:focus ~ .simple-nav__search-btn {
     z-index: 0;
 
     opacity: 1;
     transition: 0.3s;
 }
 
-.main-nav__search-btn{
+.simple-nav__search-btn{
     position: absolute;
     top: -9px;
     left: 330px;
@@ -268,13 +268,13 @@ a{
     opacity: 0;
 }
 
-.main-nav__seacrh-btn:hover{
+.simple-nav__seacrh-btn:hover{
     color: #ffffff;
     background-color: #000000;
     transition: 0.5s;
 }
 
-.main-nav__search-btn:focus{
+.simple-nav__search-btn:focus{
     z-index: 0;
     color: black;
     background-color: #000;
@@ -282,42 +282,42 @@ a{
     transition: all 0.1s linear;
 }
 
-.main-nav__seacrh-btn:active{
+.simple-nav__seacrh-btn:active{
     color: rgba(255,255,255,0.3);
 }
 
-.main-nav__search-btn:focus ~ .main-nav__search-label::before {
+.simple-nav__search-btn:focus ~ .simple-nav__search-label::before {
     display: block;
 }
 
-.main-nav__user-link{
+.simple-nav__user-link{
     position: relative;
     color: #000;
     padding: 10px;
 }
 
-.main-nav__user-link:hover{
+.simple-nav__user-link:hover{
     opacity: 0.6;
     transition: 0.3s;
 
 }
 
-.main-nav__user-link:hover::before{
+.simple-nav__user-link:hover::before{
     opacity: 0.6;
     transition: 0.3s;
 }
 
-.main-nav__user-link:active{
+.simple-nav__user-link:active{
     opacity: 0.3;
     transition: 0.3s;
 }
 
-.main-nav__user-link:active::before{
+.simple-nav__user-link:active::before{
     opacity: 0.3;
     transition: 0.3s;
 }
 
-.main-nav__user-link::before{
+.simple-nav__user-link::before{
     content: "";
     position: absolute;
     width:13px;
@@ -326,25 +326,25 @@ a{
     background-repeat: no-repeat;
 }
 
-.main-nav__user-link--login::before{
+.simple-nav__user-link--login::before{
     transform: translate(-140%,80%);
 
     background-image: url("../img/user.png");
 }
 
-.main-nav__user-link--compare::before{
+.simple-nav__user-link--compare::before{
     transform: translate(-140%,80%);
 
     background-image: url("../img/compare.png");
 }
 
-.main-nav__user-link--cart::before  {
+.simple-nav__user-link--cart::before  {
     transform: translate(-140%,80%);
 
     background-image: url("../img/cart.png");
 }
 
-.main-nav__list{
+.simple-nav__list{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -354,7 +354,7 @@ a{
     list-style: none;
 }
 
-.main-nav__link{
+.simple-nav__link{
     font-weight: 800;
     font-size: 18px;
     line-height: 24px;
@@ -365,28 +365,28 @@ a{
     cursor: pointer;
 }
 
-.main-nav__item--catalog{
+.simple-nav__item--catalog{
     padding-right: 350px;
 }
 
-.main-nav__link:hover{
+.simple-nav__link:hover{
     opacity: 0.5;
     transition: 0.3s;
 }
 
-.main-nav__link:active{
+.simple-nav__link:active{
     opacity: 0.2;
 }
 
-.main-nav__link--catalog{
+.simple-nav__link--catalog{
     position: relative;
 }
 
-.main-nav__link--catalog:hover + .main-nav__sub-wrap{
+.simple-nav__link--catalog:hover + .simple-nav__sub-wrap{
     display: block;
 }
 
-.main-nav__link--catalog::before{
+.simple-nav__link--catalog::before{
     content: "";
     position: absolute;
     right: -27px;
@@ -396,7 +396,7 @@ a{
     background-color: #b8a974;
 }
 
-.main-nav__link--catalog::after{
+.simple-nav__link--catalog::after{
     content: "";
     position: absolute;
     right: -20px;
@@ -406,11 +406,11 @@ a{
     background-color: #b8a974;
 }
 
-.main-nav__link--contacts{
+.simple-nav__link--contacts{
     margin-right: -0.2em;
 }
 
-.main-nav__sub-wrap{
+.simple-nav__sub-wrap{
     position: absolute;
     top: 100px;
     left: 0;
@@ -425,13 +425,13 @@ a{
     background-color: #f7e296;
 }
 
-.main-nav__sub-wrap:hover{
+.simple-nav__sub-wrap:hover{
     display: block;
     opacity: 1;
     transition: 0.5s;
 }
 
-.main-nav__sub-list{
+.simple-nav__sub-list{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -446,28 +446,28 @@ a{
     letter-spacing: 0.01em;
 }
 
-.main-nav__sub-column{
+.simple-nav__sub-column{
     display: flex;
     flex-direction: column;
     width: 200px;
     padding-right: 20px;
 }
 
-.main-nav__sub-column:first-child{
+.simple-nav__sub-column:first-child{
     width: 240px;
 }
 
-.main-nav__sub-column a{
+.simple-nav__sub-column a{
     display: block;
     color: #000;
 
     font-weight:800;
 }
 
-.main-nav__sub-column a:hover{
+.simple-nav__sub-column a:hover{
     opacity: 0.5;
 }
 
-.main-nav__sub-column a:active{
+.simple-nav__sub-column a:active{
     opacity: 0.3;
 }
