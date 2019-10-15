@@ -150,7 +150,7 @@ a{
     padding: 28px 60px 160px 60px;
 }
 
-.main-nav__user-list{
+.main-nav__actions{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
