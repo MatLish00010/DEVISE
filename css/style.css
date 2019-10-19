@@ -65,6 +65,7 @@ a{
     background: none;
     border: none;
     cursor: pointer;
+    color: black;
 }
 
 .btn:active {
@@ -126,7 +127,7 @@ a{
 .header__logo a{
     cursor: pointer;
     font-family: "Gilroy", "Arial" ,sans-serif;
-    font-weight: 750;
+    font-weight: 700;
     font-size: 48px;
     line-height: 48px;
     text-transform: uppercase;
@@ -531,12 +532,19 @@ a{
 .slider__item{
     position: relative;
     display: flex!important;
-    margin-top: -110px;
     padding-bottom: 97px;
 }
+
 .slider__item--1{
     width: 1110px;
     height: 520px;
+}
+.slider__item--2{
+    padding-bottom: 85px;
+}
+
+.slider__item--3{
+    padding-bottom: 114px;
 }
 
 .slider__img-wrap--01{
@@ -544,6 +552,30 @@ a{
     background-repeat: no-repeat;
     width: 384px;
     height: 486px;
+    margin-top: -1px;
+    margin-left: 5px;
+    margin-right: 40px;
+    text-align: center;
+}
+
+.slider__img-wrap--02{
+    background-image: url(../img/slider-2.png);
+    background-repeat: no-repeat;
+    width: 345px;
+    height: 485px;
+    margin-top: 12px;
+    margin-left: 16px;
+    margin-right: 40px;
+    text-align: center;
+}
+
+.slider__img-wrap--03{
+    background-image: url(../img/slider-3.png);
+    background-repeat: no-repeat;
+    width: 526px;
+    height: 334px;
+    margin-top: 65px;
+    margin-left: 30px;
     margin-right: 40px;
     text-align: center;
 }
@@ -551,7 +583,6 @@ a{
 .slider__descr-wrap{
     position: relative;
     width: 560px;
-    padding-top: 78px;
 }
 
 .slider__descr-wrap::before {
@@ -563,7 +594,7 @@ a{
     width: 100px;
     height: 7px;
 
-    background-color: #ffffff;
+    background-color: gray;
 }
 
 .slider__descr-wrap::after {
@@ -577,21 +608,135 @@ a{
     font-size: 179px;
     line-height: 179px;
     font-family: "Gilroy", "Arial", sans-serif;
-    color: #ffffff;
+    color: gray;
 }
 
 .slider__descr-wrap--1::after {
     content: "01";
+    right: -60px;
 }
 
-.sl-2{
-    background-color: red;
-    width: 1110px;
-    height: 520px;
+.slider__descr-wrap--2::after {
+    content: "02";
+    right: 52px;
 }
 
-.sl-3{
-    background-color: yellow;
-    width: 1110px;
-    height: 520px;
+.slider__descr-wrap--3::after {
+    content: "03";
+    right: -5px;
+}
+
+.slider__descr-wrap b {
+    display: block;
+    padding-top: 95px;
+    padding-bottom: 19px;
+
+    font-weight: 800;
+    font-size: 47px;
+    line-height: 56px;
+    font-family: "Gilroy", "Arial", sans-serif;
+    color: #000000;
+    letter-spacing: 0.01em;
+}
+
+.slider__descr-wrap p {
+    margin: 0;
+    padding: 0;
+
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 30px;
+    font-family: "Open Sans", "Arial", sans-serif;
+    letter-spacing: 0.01em;
+}
+
+.slider__descr-wrap--1 p {
+    width: 490px;
+}
+
+.slider__descr-wrap--2 p,
+.slider__descr-wrap--3 p {
+    width: 460px;
+}
+
+.slider__descr-wrap .btn {
+    width: 220px;
+    margin-top: 42px;
+    margin-bottom: 46px;
+    margin-left: 2px;
+
+    background: none;
+    border: none;
+}
+
+.slider__advantages {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+}
+
+.slider__advantages--1 {
+    width: 460px;
+}
+
+.slider__advantages--2 {
+    width: 200px;
+}
+
+.slider__advantages--3 {
+    width: 300px;
+}
+
+.slider__advantages-col {
+    display: block;
+    margin: 0;
+    padding: 0;
+
+    font-weight: 300;
+    font-size: 36px;
+    line-height: 48px;
+    font-family: "Gilroy", "Arial", sans-serif;
+    color: #000000;
+}
+
+.slider__advantages-descr {
+    display: block;
+    margin: 0;
+    padding: 0;
+    padding-top: 8px;
+
+    font-size: 13px;
+    line-height: 20px;
+    text-align: left;
+}
+
+.slider__advantages-col--first {
+    width: 160px;
+}
+
+.slider__advantages-col--second {
+    width: 140px;
+}
+
+.slider__advantages-col--third {
+    flex-grow: 1;
+    width: 160px;
+}
+
+.slider__advantages-descr--first {
+    width: 160px;
+}
+
+.slider__advantages-descr--second {
+    width: 140px;
+}
+
+.slider__advantages-descr--third {
+    flex-grow: 1;
+    width: 160px;
+}
+
+.slider__advantages--2 .slider__advantages-col--first {
+    flex-grow: 1;
 }
