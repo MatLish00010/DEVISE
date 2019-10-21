@@ -520,6 +520,8 @@ a{
 .promo-slider{
     position: relative;
     z-index: 1;
+    margin-top: -100px;
+    padding-bottom: 60px;
 }
 
 .slider{
@@ -594,7 +596,7 @@ a{
     width: 100px;
     height: 7px;
 
-    background-color: gray;
+    background-color: #ffffff;
 }
 
 .slider__descr-wrap::after {
@@ -608,7 +610,7 @@ a{
     font-size: 179px;
     line-height: 179px;
     font-family: "Gilroy", "Arial", sans-serif;
-    color: gray;
+    color: #ffffff;
 }
 
 .slider__descr-wrap--1::after {
@@ -618,7 +620,7 @@ a{
 
 .slider__descr-wrap--2::after {
     content: "02";
-    right: 52px;
+    right: -60px;
 }
 
 .slider__descr-wrap--3::after {
