@@ -27,6 +27,7 @@
 
     margin: 0;
     padding: 0;
+    outline: none;
 }
 .slick-list:focus
 {
@@ -76,6 +77,7 @@
 
 .slick-slide
 {
+    outline: none;
     display: none;
     float: left;
 
