@@ -514,3 +514,301 @@ a{
 .nav__sub-column--opened a:active{
     opacity: 0.3;
 }
+
+/*services-slider*/
+
+.services-slider {
+    position: relative;
+}
+
+.services-slider::before {
+    content: "";
+    position: absolute;
+    top: 163px;
+    left: 0;
+    z-index: -1;
+
+    width: 100%;
+    height: calc(100% - 164px);
+
+    background-color: #e5e5e5;
+}
+
+.services-slider-wrap {
+    z-index: 1;
+
+    display: flex;
+    padding-bottom: 118px;
+}
+
+.services-slider__item {
+    position: relative;
+
+    order: 2;
+    width: 460px;
+    margin-left: 120px;
+    padding-top: 136px;
+}
+
+.services-slider__item--delivery::before {
+    content: "";
+    position: absolute;
+    top: 148px;
+    right: -234px;
+    z-index: 0;
+
+    width: 136px;
+    height: 164px;
+
+    background-image: url("../img/delivery.png");
+    background-repeat: no-repeat;
+}
+
+.services-slider__item--warranty {
+    margin-left: 121px;
+}
+
+.services-slider__item--warranty::before {
+    content: "";
+    position: absolute;
+    top: 124px;
+    right: -253px;
+    z-index: 0;
+
+    width: 171px;
+    height: 195px;
+
+    background-image: url("../img/warranty.png");
+    background-repeat: no-repeat;
+}
+
+.services-slider__item--credit::before {
+    content: "";
+    position: absolute;
+    top: 124px;
+    right: -258px;
+    z-index: 0;
+
+    width: 156px;
+    height: 188px;
+
+    background-image: url("../img/credit.png");
+    background-repeat: no-repeat;
+}
+
+.services-slider__item--credit {
+    width: 430px;
+}
+
+.services-slider__item h3 {
+    margin: 0;
+    padding-bottom: 31px;
+}
+
+.services-slider__item p {
+    margin: 0;
+}
+
+.services-slider__controls {
+    position: relative;
+
+    padding-top: 142px;
+    padding-right: 120px;
+}
+
+.services-slider__controls::before {
+    content: "";
+    position: absolute;
+    top: 63px;
+    right: -4px;
+
+    width: 7px;
+    height: calc(100% - 15px);
+
+    background-color: #000000;
+}
+
+.services-slider__control {
+    position: relative;
+    z-index: 1;
+
+    display: block;
+    order: 1;
+    width: 160px;
+    margin-bottom: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 24px;
+    font-family: "Gilroy", "Arial", sans-serif;
+    text-align: center;
+    color: #000000;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+
+    cursor: pointer;
+}
+
+.services-slider__control::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    z-index: -1;
+
+    width: 160px;
+    height: 8px;
+    margin-top: -4px;
+
+    background-color: #f0c52e;
+}
+
+.services-slider__control::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 100%;
+    z-index: -1;
+
+    width: 0;
+    height: 40px;
+
+    background-color: #000000;
+}
+
+.services-slider__control:hover::before {
+    top: 0;
+
+    height: 40px;
+    margin: 0;
+
+    transition: all 0.3s linear;
+}
+
+.services-slider__input:focus ~ .services-slider__controls label {
+    outline: none;
+}
+
+.services-slider__input[id="services-control-1"]:checked ~ .services-slider__controls label[for="services-control-1"],
+.services-slider__input[id="services-control-2"]:checked ~ .services-slider__controls label[for="services-control-2"],
+.services-slider__input[id="services-control-3"]:checked ~ .services-slider__controls label[for="services-control-3"] {
+    color: #f7e184;
+}
+
+.services-slider__input[id="services-control-1"]:checked ~ .services-slider__controls label[for="services-control-1"]::before {
+    top: 1px;
+    z-index: -1;
+
+    height: 40px;
+    margin: 0;
+
+    color: #f7e184;
+
+    background-color: #000000;
+
+    transition: all 0.3s linear;
+}
+
+.services-slider__input[id="services-control-1"]:checked ~ .services-slider__controls label[for="services-control-1"]::after {
+    top: 1px;
+    z-index: -1;
+
+    width: 120px;
+    height: 40px;
+    margin: 0;
+
+    color: #f7e184;
+
+    background-color: #000000;
+
+    transition: all 0.3s linear;
+}
+
+.services-slider__input[id="services-control-2"]:checked ~ .services-slider__controls label[for="services-control-2"]::before {
+    top: 0;
+    z-index: -1;
+
+    height: 40px;
+    margin: 0;
+
+    color: #f7e184;
+
+    background-color: #000000;
+
+    transition: all 0.3s linear;
+}
+
+.services-slider__input[id="services-control-2"]:checked ~ .services-slider__controls label[for="services-control-2"]::after {
+    top: 0;
+    z-index: -1;
+
+    width: 120px;
+    height: 40px;
+    margin: 0;
+
+    color: #f7e184;
+
+    background-color: #000000;
+
+    transition: all 0.3s linear;
+}
+
+.services-slider__input[id="services-control-3"]:checked ~ .services-slider__controls label[for="services-control-3"]::before {
+    top: 0;
+    z-index: -1;
+
+    height: 40px;
+    margin: 0;
+
+    color: #f7e184;
+
+    background-color: #000000;
+
+    transition: all 0.3s linear;
+}
+
+.services-slider__input[id="services-control-3"]:checked ~ .services-slider__controls label[for="services-control-3"]::after {
+    top: 0;
+    z-index: -1;
+
+    width: 120px;
+    height: 40px;
+    margin: 0;
+
+    color: #f7e184;
+
+    background-color: #000000;
+
+    transition: all 0.3s linear;
+}
+
+.services-slider__input[id="services-control-2"]:checked ~ .services-slider__controls label[for="services-control-2"]::before,
+.services-slider__input[id="services-control-3"]:checked ~ .services-slider__controls label[for="services-control-3"]::before,
+.services-slider__input[id="services-control-1"]:checked ~ .services-slider__controls label[for="services-control-1"]::before,
+.services-slider__input[id="services-control-2"]:checked ~ .services-slider__controls label[for="services-control-2"]::before,
+.services-slider__input[id="services-control-3"]:checked ~ .services-slider__controls label[for="services-control-3"]::before {
+    display: block;
+}
+
+.services-slider__input[id="services-control-1"]:checked ~ .services-slider__item--warranty,
+.services-slider__input[id="services-control-1"]:checked ~ .services-slider__item--credit,
+.services-slider__input[id="services-control-2"]:checked ~ .services-slider__item--delivery,
+.services-slider__input[id="services-control-2"]:checked ~ .services-slider__item--credit,
+.services-slider__input[id="services-control-3"]:checked ~ .services-slider__item--delivery,
+.services-slider__input[id="services-control-3"]:checked ~ .services-slider__item--warranty {
+    display: none;
+}
+
+.services-slider__input {
+    display: none;
+}
+
+.services-slider__item h3 {
+    font-weight: 800;
+    font-size: 47px;
+    line-height: 48px;
+    font-family: "Gilroy", "Arial", sans-serif;
+    color: #000000;
+}
