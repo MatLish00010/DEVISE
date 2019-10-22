@@ -66,6 +66,7 @@ a{
     border: none;
     cursor: pointer;
     color: black;
+    outline: none;
 }
 
 .btn:active {
@@ -143,7 +144,7 @@ a{
 }
 
 .header__logo a:active{
-    opacity: 0.3s;
+    opacity: 0.3;
 }
 
 .header__logo img{
