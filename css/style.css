@@ -126,7 +126,7 @@ a{
 .header__logo a{
     cursor: pointer;
     font-family: "Gilroy", "Arial" ,sans-serif;
-    font-weight: 750;
+    font-weight: 700;
     font-size: 48px;
     line-height: 48px;
     text-transform: uppercase;
@@ -142,7 +142,7 @@ a{
 }
 
 .header__logo a:active{
-    opacity: 0.3s;
+    opacity: 0.3;
 }
 
 .header__logo img{
@@ -587,8 +587,9 @@ a{
 .goods__item-link:hover .goods__item-wrap,
 .goods__item-link:focus .goods__item-wrap{
     background-color: rgba(240, 197, 46, 1);
-    transition: all 0.2s linear;
+    transition: all 0.4s linear;
 }
+
 
 .goods__item-link:active .goods__item-img,
 .goods__item-link:active .goods__item-name{
