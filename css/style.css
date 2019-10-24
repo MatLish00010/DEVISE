@@ -551,45 +551,13 @@ a{
     padding-bottom: 114px;
 }
 
-.slider__img-wrap--01{
-    background-image: url(../img/slider-1.png);
-    background-repeat: no-repeat;
-    width: 384px;
-    height: 486px;
-    margin-top: -1px;
-    margin-left: 5px;
-    margin-right: 40px;
-    text-align: center;
-}
-
-.slider__img-wrap--02{
-    background-image: url(../img/slider-2.png);
-    background-repeat: no-repeat;
-    width: 345px;
-    height: 485px;
-    margin-top: 12px;
-    margin-left: 16px;
-    margin-right: 40px;
-    text-align: center;
-}
-
-.slider__img-wrap--03{
-    background-image: url(../img/slider-3.png);
-    background-repeat: no-repeat;
-    width: 526px;
-    height: 334px;
-    margin-top: 65px;
-    margin-left: 30px;
-    margin-right: 40px;
-    text-align: center;
-}
-
-.slider__descr-wrap{
+.slider__descr{
     position: relative;
     width: 560px;
+    margin-left: 67px;
 }
 
-.slider__descr-wrap::before {
+.slider__descr::before {
     content: "";
     position: absolute;
     top: 36px;
@@ -601,7 +569,7 @@ a{
     background-color: #ffffff;
 }
 
-.slider__descr-wrap::after {
+.slider__descr::after {
     content: "";
     position: absolute;
     top: -15px;
@@ -615,22 +583,22 @@ a{
     color: #ffffff;
 }
 
-.slider__descr-wrap--1::after {
+.slider__descr--1::after {
     content: "01";
     right: -60px;
 }
 
-.slider__descr-wrap--2::after {
+.slider__descr--2::after {
     content: "02";
     right: -60px;
 }
 
-.slider__descr-wrap--3::after {
+.slider__descr--3::after {
     content: "03";
     right: -5px;
 }
 
-.slider__descr-wrap b {
+.slider__descr b {
     display: block;
     padding-top: 95px;
     padding-bottom: 19px;
@@ -643,7 +611,7 @@ a{
     letter-spacing: 0.01em;
 }
 
-.slider__descr-wrap p {
+.slider__descr p {
     margin: 0;
     padding: 0;
 
@@ -654,16 +622,16 @@ a{
     letter-spacing: 0.01em;
 }
 
-.slider__descr-wrap--1 p {
+.slider__descr--1 p {
     width: 490px;
 }
 
-.slider__descr-wrap--2 p,
-.slider__descr-wrap--3 p {
+.slider__descr--2 p,
+.slider__descr--3 p {
     width: 460px;
 }
 
-.slider__descr-wrap .btn {
+.slider__descr .btn {
     width: 220px;
     margin-top: 42px;
     margin-bottom: 46px;
