@@ -641,7 +641,7 @@ a{
     border: none;
 }
 
-.slider__advantages-col--self{
+.slider__advantages-col{
     width: 385px;
     display: flex;
     justify-content: space-around;
@@ -650,23 +650,6 @@ a{
     padding-top: 10px;
 }
 
-.slider__advantages-col--watch{
-    width: 200px;
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    padding-bottom: 10px;
-    padding-top: 10px;
-}
-
-.slider__advantages-col--copter{
-    width: 290px;
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    padding-bottom: 10px;
-    padding-top: 10px;
-}
 
 .slider__advantages-value{
     display: block;
