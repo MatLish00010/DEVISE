@@ -598,7 +598,7 @@ a{
     right: -5px;
 }
 
-.slider__descr b {
+.slider__descr h2 {
     display: block;
     padding-top: 95px;
     padding-bottom: 19px;
