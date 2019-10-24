@@ -681,3 +681,103 @@ a{
     margin: 0;
     padding: 0;
 }
+
+/*goods*/
+
+.goods{
+    padding-top: 50px;
+}
+
+.goods__list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+
+.goods__img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:160px;
+    height: 160px;
+    background-color: rgba(240, 197, 46, 0.5);
+}
+
+.goods__img--vr::before{
+    content: "";
+    background-image: url(../img/goods-sprite.png);
+    background-position: -20px -174px;
+    width: 97px;
+    height: 55px;
+    margin: auto;
+    text-align: center;
+}
+
+.goods__img--self::before{
+    content: "";
+    background-image: url(../img/goods-sprite.png);
+    background-position: -20px -249px;
+    width: 86px;
+    height: 117px;
+}
+
+.goods__img--camera::before{
+    content: "";
+    background-image: url(../img/goods-sprite.png);
+    background-position: -20px -386px;
+    width: 71px;
+    height: 87px;
+}
+
+.goods__img--fitness::before{
+    content: "";
+    background-image: url(../img/goods-sprite.png);
+    background-position: -20px -89px;
+    width: 107px;
+    height: 65px;
+
+}
+.goods__img--watch::before{
+    content: "";
+    background-image: url(../img/goods-sprite.png);
+    background-position: -20px -493px;
+    width: 56px;
+    height: 98px;
+
+}
+.goods__img--copter::before{
+    content: "";
+    background-image: url(../img/goods-sprite.png);
+    background-position: -20px -0px;
+    width: 132px;
+    height: 69px;
+}
+
+.goods__link:hover .goods__img,
+.goods__link:focus .goods__img{
+    background-color: rgba(240, 197, 46, 1);
+    transition: all 0.4s linear;
+}
+
+
+.goods__link:active .goods__img,
+.goods__link:active .goods__name{
+    opacity: 0.3;
+}
+
+.goods__name{
+    width: 160px;
+    margin: 0;
+    padding-top: 33px;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 24px;
+    font-family: "Gilroy", "Arial", sans-serif;
+    color: #000000;
+}
+
+
