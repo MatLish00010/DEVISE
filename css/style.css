@@ -1075,3 +1075,69 @@ a{
     font-family: "Gilroy", "Arial", sans-serif;
     color: #000000;
 }
+
+/*Brands*/
+
+.main__brands{
+    position: relative;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    height: 120px;
+    font-size: 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.main__brands li{
+    display: inline-block;
+    width: 300px;
+    height: 100px;
+}
+
+.main__brand{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.main__brand--dji{
+    background-image: url(../img/sprite-brands.png);
+    background-position: -20px -0px;
+    background-repeat: no-repeat;
+    width: 260px;
+    height: 100px;
+}
+
+.main__brand--adgets{
+    background-image: url(../img/sprite-brands.png);
+    background-position: -300px -120px;
+    background-repeat: no-repeat;
+    width: 260px;
+    height: 100px;
+}
+.main__brand--gopro{
+    background-image: url(../img/sprite-brands.png);
+    background-position: -20px -120px;
+    background-repeat: no-repeat;
+    width: 260px;
+    height: 100px;
+}
+
+.main__brand--vive{
+    background-image: url(../img/sprite-brands.png);
+    background-position: -300px -120px;
+    background-repeat: no-repeat;
+    width: 260px;
+    height: 100px;
+}
+
+.main__brand{
+    opacity: 0.1;
+}
+
+.main__brand:hover{
+    opacity: 1;
+    transition: 0.3s;
+}
