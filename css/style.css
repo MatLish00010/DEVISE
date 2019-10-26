@@ -1155,7 +1155,7 @@ a{
     border-radius: 50%;
 }
 
-.main-info.btn{
+.main-info .btn{
     margin-left: 3px;
 }
 
@@ -1183,22 +1183,29 @@ a{
     padding-bottom: 39px;
 }
 
-.address__map{
-    display: block;
-    margin-left: 1px;
-}
 .address{
     width: 560px;
     height: 222px;
 }
 .contacts-map{
+    display: block;
     background-image: url(../img/map.png);
     background-repeat: no-repeat;
     width: 560px;
     height: 222px;
 }
 
-.main-contacts .btn{
-    margin-top: 59px;
-    margin-left: 3px;
+.main-info__btn{
+    width: 300px;
+    margin-left: 2px;
+    background: none;
+    border: none;
 }
+
+.main-contacts .btn{
+    width: 220px;
+    margin-top: 67px;
+    background: none;
+    border: none;
+}
+
