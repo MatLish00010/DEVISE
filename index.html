@@ -219,6 +219,28 @@
 
     </main>
 
+    <section class="popup-write-us">
+        <div class="popup-write-us__wrap">
+            <form action="" class="popup-form" method="post">
+                <div class="popup-input-wrap popup-input-wrap--name">
+                    <label for="user-name">Ваше имя:</label>
+                    <input type="text" id="user-name" name="user-name" placeholder="Имя Фамилия">
+                </div>
+                <div class="popup-input-wrap popup-input-wrap--email">
+                    <label for="user-email">Ваш e-mail:</label>
+                    <input type="email" id="user-email" name="user-email" placeholder="keks@kek">
+                </div>
+                <div class="popup-input-wrap popup-input-wrap--message">
+                    <label for="user-message">Текст письма:</label>
+                    <textarea name="user-message" id="user-message" placeholder="В свободной форме"></textarea>
+                </div>
+                <button class="btn" type="submit">Отправить</button>
+            </form>
+            <button class="popup-write-us__close" type="button">
+                <span class="visually-hidden">Закрыть</span>
+            </button>
+        </div>
+    </section>
 
     <script src="http://yastatic.net/jquery/2.1.3/jquery.min.js"></script>
     <script src="slick/slick.min.js"></script>
