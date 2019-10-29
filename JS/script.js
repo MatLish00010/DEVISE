@@ -1,4 +1,4 @@
-var popupWriteLink = document.querySelector(".main-contacts__btn"),
+var popupWriteLink = document.querySelector(".nav__user-link--login"),
     popupWrite = document.querySelector(".popup-write-us"),
     userName = popupWrite.querySelector("name=user-name"),
     userEmail = popupWrite.querySelector("name=user-email"),
