@@ -1136,7 +1136,6 @@ a{
 
 .modal__input:invalid, .modal__comment:invalid{
     box-shadow: none;
-    color: #e74246;
     border: 2px solid #e74246;
 }
 
@@ -1155,21 +1154,19 @@ a{
     height: 115px;
 }
 
-.btn-1{
+.btn-send{
     position: absolute;
     bottom: 75px;
-    background-color: #fb565a;
     width: 260px;
     border: 0;
 }
 
-.btn-1:active, .btn:focus{
+.btn-send:active, .btn:focus{
     outline: none;
 }
 
 .button__address{
     position: absolute;
-    padding: 50% 50%;
     font-size: 300px;
 }
 .modal__close{
