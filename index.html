@@ -218,9 +218,32 @@
     </section>
 
     </main>
+
+    <button class="button__address">Тест</button>
+
+    <div class="modal">
+        <div class="modal__wrp">
+            <button class="modal__close" type="button" title="Закрыть">закрыть</button>
+            <span class="modal__title">Напишите нам!</span>
+            <form class="modal__form" action="#" method="post">
+                <label class="modal__text" for="login">Ваше имя
+                    <input class="modal__input modal__input--login" id="login" type="text" name="login" placeholder="Представьтесь, пожалуйста">
+                </label>
+                <label class="modal__text" for="email">Ваш e-mail
+                    <input class="modal__input modal__input--mail" type="email" name="email" id="email" placeholder="Для отправки ответа">
+                </label>
+                <p class="modal__text modal__text--comment">Текст письма
+                    <textarea class="modal__comment" name="comment" id="comment-field" rows="4" placeholder="В свободной форме"></textarea></p>
+                <button class="btn-1" type="submit">Отправить</button>
+            </form>
+        </div>
+    </div>
+
+
     <script src="http://yastatic.net/jquery/2.1.3/jquery.min.js"></script>
     <script src="slick/slick.min.js"></script>
     <script src="js/js.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
 
