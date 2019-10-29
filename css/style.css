@@ -1321,3 +1321,15 @@ a{
 .popup-write-us__close:active{
     opacity: 0.3;
 }
+
+.modal__show{
+    display: block;
+    -wedkit-animation: bounce .5s;
+    animation: bounce .5s;
+}
+
+.modal__overlay-shadow
+{
+    display: block;
+}
+
