@@ -1193,6 +1193,14 @@ a{
     background-repeat: no-repeat;
     width: 560px;
     height: 222px;
+    cursor: pointer;
+    border-radius: 5%;
+}
+
+.contacts-map:hover{
+    box-shadow: 0 0 10px #f0c52e;
+    transition: 0.5s;
+
 }
 
 .main-info__btn{
