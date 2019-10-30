@@ -1232,7 +1232,7 @@ a{
     animation: bounce .5s;
 }
 
-.modal__overlay {
+.window__overlay {
     position: fixed;
     z-index: 45;
     top: 0;
@@ -1243,10 +1243,28 @@ a{
     background: rgba(0, 0, 0, .5);
 }
 
+.window__close{
+    position: absolute;
+    font-size: 0;
+    top: -50px;
+    right: 0px;
+    width: 21px;
+    height: 21px;
+    cursor: pointer;
+    border-radius: 50%;
+    background-color: black;
+    opacity: 0.3;
+}
 
-.modal__overlay-shadow
-{
+
+.window__overlay-shadow{
     display: block;
+}
+
+.window__error
+{
+    -webkit-animation: shake .6s;
+    animation: shake .6s;
 }
 
 @-webkit-keyframes bounce
@@ -1349,10 +1367,5 @@ a{
         -webkit-transform: translateX(10px);
         transform: translateX(10px);
     }
-}
-
-.modal__error {
-    -webkit-animation: shake .6s;
-    animation: shake .6s;
 }
 

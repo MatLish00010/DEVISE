@@ -1,8 +1,8 @@
 var link = document.querySelector('.address');
 var popup = document.querySelector('.window__map');
-var close = popup.querySelector('.modal__close');
+var close = popup.querySelector('.window__close');
 
-var shadow = document.querySelector('.modal__overlay');
+var shadow = document.querySelector('.window__overlay');
 
 var form = popup.querySelector('.modal__form');
 var login = popup.querySelector('.modal__input--login');
@@ -14,7 +14,7 @@ var storage = localStorage.getItem('modal__input--login');
 link.addEventListener('click', function (event) {
     event.preventDefault();
     popup.classList.add('window-show');
-    shadow.classList.add('modal__overlay-shadow');
+    shadow.classList.add('window__overlay-shadow');
       if (storage) {
         login.value = storage;
         mail.focus();
@@ -27,9 +27,9 @@ link.addEventListener('click', function (event) {
 // закрытие окна
 close.addEventListener('click', function (event) {
     event.preventDefault();
-    popup.classList.remove('modal__show');
-    popup.classList.remove('modal__error');
-    shadow.classList.remove('modal__overlay-shadow');
+    popup.classList.remove('window-show');
+    popup.classList.remove('window__error');
+    shadow.classList.remove('window__overlay-shadow');
 });
 
 // отправка формы
