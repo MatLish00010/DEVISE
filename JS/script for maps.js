@@ -1,4 +1,4 @@
-var link = document.querySelector('.main-contacts__btn');
+var link = document.querySelector('.address');
 var popup = document.querySelector('.window__map');
 var close = popup.querySelector('.modal__close');
 
