@@ -536,19 +536,11 @@ a{
 .slider__item{
     position: relative;
     display: flex!important;
-    padding-bottom: 97px;
 }
 
 .slider__item--1{
     width: 1110px;
     height: 520px;
-}
-.slider__item--2{
-    padding-bottom: 85px;
-}
-
-.slider__item--3{
-    padding-bottom: 114px;
 }
 
 .slider__descr{
