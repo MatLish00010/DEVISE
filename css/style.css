@@ -1248,12 +1248,47 @@ a{
     font-size: 0;
     top: -50px;
     right: 0px;
-    width: 21px;
-    height: 21px;
+    width: 31px;
+    height: 31px;
     cursor: pointer;
     border-radius: 50%;
     background-color: black;
-    opacity: 0.3;
+    opacity: 1;
+    border: none;
+    outline: none;
+}
+
+.window__close::before{
+    content: "";
+    position: absolute;
+    height: 16px;
+    width: 2px;
+    background-color: #fff;
+    transform: translate(-40%, -52%) rotate(-45deg);
+    
+}
+
+.window__close::after{
+    content: "";
+    position: absolute;
+    height: 16px;
+    width: 2px;
+    background-color: #fff;
+    transform: translate(-40%, -52%) rotate(45deg);
+
+}
+
+
+.window__close:hover{
+    box-shadow: 0 0 10px red;
+    background-color: red;
+    transform: rotate(360deg);
+    transition: 0.5s;
+}
+
+.window__close:active{
+    opacity: 0;
+    transition: 0s;
 }
 
 
