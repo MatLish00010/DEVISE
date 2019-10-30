@@ -1185,10 +1185,14 @@ a{
 
 .modal__close:hover{
     opacity: 1;
+    transition: 0.3s;
+    transform: rotate(360deg);
+    box-shadow: ;
 }
 
 .modal__close:active{
     opacity: 0.1;
+    transition: 0.3s;
 }
 
 .modal__overlay {
