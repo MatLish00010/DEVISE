@@ -1256,6 +1256,7 @@ a{
     opacity: 1;
     border: none;
     outline: none;
+    box-shadow: 0 0 10px #ffffff;
 }
 
 .window__close::before{
@@ -1280,15 +1281,28 @@ a{
 
 
 .window__close:hover{
-    box-shadow: 0 0 10px red;
-    background-color: red;
-    transform: rotate(360deg);
+    box-shadow: 0 0 10px #f0c52e;
+    background-color: #f0c52e;
+    transform: rotate(360deg) ;
     transition: 0.5s;
 }
 
 .window__close:active{
     opacity: 0;
     transition: 0s;
+}
+
+.window__close:hover::before{
+    background-color: #000000;
+    transition: 0.5s;
+    transform: rotate(450deg) translate(-385%, 10%);
+;
+}
+
+.window__close:hover::after{
+    background-color: #000000;
+    transition: 0.5s;
+    transform: rotate(450deg) translate(-385%, 10%);
 }
 
 
