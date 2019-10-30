@@ -1174,27 +1174,60 @@ a{
     font-size: 0;
     top: 80px;
     right: 90px;
-    width: 21px;
-    height: 21px;
+    width: 31px;
+    height: 31px;
     cursor: pointer;
     border: 0;
     background: none;
-    background-image: url("../img/close-cross.png");
-    opacity: 0.3;
+    opacity: 1;
+    border-radius: 50%;
 }
 
+.modal__close::before{
+    content: "";
+    position: absolute;
+    height: 16px;
+    width: 2px;
+    background-color: #000000;
+    transform: translate(-40%, -52%) rotate(-45deg);
+
+}
+
+.modal__close::after{
+    content: "";
+    position: absolute;
+    height: 16px;
+    width: 2px;
+    background-color: #000000;
+    transform: translate(-40%, -52%) rotate(45deg);
+
+}
+
+
 .modal__close:hover{
-    opacity: 1;
-    transition: 0.3s;
-    transform: rotate(360deg);
-    box-shadow: ;
+    box-shadow: 0 0 10px #f0c52e;
+    background-color: #f0c52e;
+    transform: rotate(360deg) ;
+    transition: 0.5s;
 }
 
 .modal__close:active{
-    opacity: 0.1;
-    transition: 0.3s;
+    opacity: 0;
+    transition: 0s;
 }
 
+.modal__close:hover::before{
+    background-color: #ffffff;
+    transition: 0.5s;
+    transform: rotate(450deg) translate(-385%, 10%);
+;
+}
+
+.modal__close:hover::after{
+    background-color: #ffffff;
+    transition: 0.5s;
+    transform: rotate(450deg) translate(-385%, 10%);
+}
 .modal__overlay {
     position: fixed;
     z-index: 45;
