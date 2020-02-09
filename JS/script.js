@@ -15,7 +15,7 @@ link.addEventListener('click', function (event) {
     event.preventDefault();
     popup.classList.add('modal__show');
     shadow.classList.add('modal__overlay-shadow');
-      if (storage) {
+    if (storage) {
         login.value = storage;
         mail.focus();
     } else {
@@ -34,7 +34,7 @@ close.addEventListener('click', function (event) {
 
 // отправка формы
 form.addEventListener('submit', function (event) {
-        if (!login.value || !password.value) {
+    if (!login.value || !password.value) {
         popup.classList.remove('modal__error');
         //popup.offsetWidth = popup.offsetWidth;
         console.log('Нужно ввести имя и электронную почту');
@@ -56,3 +56,5 @@ window.addEventListener('keydown', function (event) {
         }
     }
 });
+
+
