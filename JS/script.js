@@ -1,4 +1,4 @@
-var link = document.querySelector('.button__address');
+var link = document.querySelector('.main-contacts__btn');
 var popup = document.querySelector('.modal');
 var close = popup.querySelector('.modal__close');
 
@@ -55,13 +55,4 @@ window.addEventListener('keydown', function (event) {
             shadow.classList.remove('modal__overlay-shadow');
         }
     }
-});
-
-
-// закрытие при нажатии на тень
-shadow.addEventListener("click", function(event) {
-    event.preventDefault();
-    popup.classList.remove('modal__show');
-    popup.classList.remove('modal__error');
-    shadow.classList.remove('modal__overlay-shadow');
 });
