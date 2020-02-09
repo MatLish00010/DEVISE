@@ -11,6 +11,10 @@ html{
     overflow-x: hidden;
 }
 
+li {
+    list-style-type: none;
+}
+
 /*basic element settings*/
 
 
@@ -1210,6 +1214,8 @@ a{
     height: 8px;
     border: 2px solid #e6e6e6;
     border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .main-info .btn{
